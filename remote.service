@@ -1,0 +1,10 @@
+[Unit]
+Description=RemoteControllService
+After=network.target
+
+[Service]
+ExecStart=/home/osmc/X/remoted.sh start
+Type=forking
+
+[Install]
+WantedBy=default.target
